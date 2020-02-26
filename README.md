@@ -90,3 +90,18 @@ describe('angularjs homepage todo list', function () {
     });
 });
 ```
+
+PACKAGE.JSON WITH SCRIPTS
+------------------------------
+In your package.json file add on the scripts section the following lines:
+
+The protractor line points to the protactor cmd file and the argument
+
+passed is the specs file we have added before.
+
+```
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "protractor": ".\\node_modules\\.bin\\protractor.cmd protractor.conf.js"
+  },
+```
