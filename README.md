@@ -61,3 +61,17 @@ Your package.json file should now look like this:
 CONFIGURATION FILE v1.0.0
 -------------------------
 Add on your project ROOT folder the file protractor-conf.js
+
+The basic skeleton should look like this:
+
+```
+exports.config = {
+    //directConnect: true,
+    seleniumAddress: 'http://localhost:4444/wd/hub',
+    framework: 'custom',
+    frameworkPath: require.resolve('protractor-cucumber-framework'),
+    capabilities: {
+        'browserName': 'chrome'
+    },
+};
+```
