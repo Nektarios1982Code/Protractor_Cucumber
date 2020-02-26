@@ -58,15 +58,6 @@ Your package.json file should now look like this:
 }
 ```
 
-FOLDER STRUCTURE
--------------------------
-Now your folder structure should look like : 
-
-ROOT
-  > node_modules
-package.json
-package-lock.json
-
 CONFIGURATION FILE v1.0.0
 -------------------------
-Add on your project folder the
+Add on your project ROOT folder the file protractor-conf.js
