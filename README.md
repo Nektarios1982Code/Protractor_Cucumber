@@ -92,7 +92,7 @@ describe('angularjs homepage todo list', function () {
 ```
 
 PACKAGE.JSON WITH SCRIPTS
-------------------------------
+-------------------------
 In your package.json file add on the scripts section the following lines:
 
 The protractor line points to the protactor cmd file and the argument
@@ -105,3 +105,22 @@ passed is the specs file we have added before.
     "protractor": ".\\node_modules\\.bin\\protractor.cmd protractor.conf.js"
   },
 ```
+
+RUN OUR FIRST PROTRACTOR SCRIPT
+-------------------------------
+Open 2 terminals or cmd windows and leave them open in order to keep running the processes below:
+Go to your 1st terminal or cmd and type from your project's folder the following commands:
+
+1. webdriver-manager update
+
+This will download all required webdrivers for our browsers
+
+2. webdriver-manager start
+
+This will start the webdriver manager in order to successfully receive browser requests for connection
+
+From a 2nd terminal or cmd window run the following command :
+
+3. npm run protractor
+
+This command will automatically run the script with property 'protractor', defined in the package.json
