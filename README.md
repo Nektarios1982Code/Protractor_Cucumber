@@ -209,10 +209,8 @@ C:\Protractor_GIT>npm run test
 [00:10:42] I/hosted - Using the selenium server at http://localhost:4444/wd/hub
 UUUUUU.
 
-Warnings:
-
-1) Scenario: In order to verify login to facebook # features\login.feature:7
-   ? Given I go to "http://www.way2automation.com/angularjs-protractor/banking/#/login"
+1) Scenario: In order to verify correct title of page # features\login.feature:7
+   ? Given I go to "http://juliemr.github.io/protractor-demo/"
        Undefined. Implement with the following snippet:
 
          Given('I go to {string}', function (string) {
@@ -220,42 +218,10 @@ Warnings:
            return 'pending';
          });
 
-   ? When I found the title as "Protractor practice website - Banking App"
+   ? Then I found the title as "Super Calculator"
        Undefined. Implement with the following snippet:
 
-         When('I found the title as {string}', function (string) {
-           // Write code here that turns the phrase above into concrete actions
-           return 'pending';
-         });
-
-   ? Then I click on CustomerLogin Button
-       Undefined. Implement with the following snippet:
-
-         Then('I click on CustomerLogin Button', function () {
-           // Write code here that turns the phrase above into concrete actions
-           return 'pending';
-         });
-
-   ? Then I select the value as "Harry Potter" from the list
-       Undefined. Implement with the following snippet:
-
-         Then('I select the value as {string} from the list', function (string) {
-           // Write code here that turns the phrase above into concrete actions
-           return 'pending';
-         });
-
-   ? Then I click on Login
-       Undefined. Implement with the following snippet:
-
-         Then('I click on Login', function () {
-           // Write code here that turns the phrase above into concrete actions
-           return 'pending';
-         });
-
-   ? Then Welcome Page should show login as "Harry Potter"
-       Undefined. Implement with the following snippet:
-
-         Then('Welcome Page should show login as {string}', function (string) {
+         Then('I found the title as {string}', function (string) {
            // Write code here that turns the phrase above into concrete actions
            return 'pending';
          });
@@ -263,6 +229,19 @@ Warnings:
    √ After # node_modules\protractor-cucumber-framework\lib\resultsCapturer.js:27
 
 1 scenario (1 undefined)
-6 steps (6 undefined)
+2 steps (2 undefined)
 0m00.002s
+[00:14:01] I/launcher - 0 instance(s) of WebDriver still running
+[00:14:01] I/launcher - chrome #01 passed
+```
+
+STEPDEFINITIONS FILE GENERATION
+-------------------------------
+Now we have to add content in our stepDefinitions.js file
+based from the skeleton generated from the feature file above
+
+Go to your stepDefinitions.js file and add the content below:
+
+```
+
 ```
