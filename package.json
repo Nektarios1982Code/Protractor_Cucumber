@@ -1,0 +1,19 @@
+{
+  "name": "protractor_git",
+  "version": "1.0.0",
+  "description": "\"# Protractor_Cucumber\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nektarios1982Code/Protractor_Cucumber.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nektarios1982Code/Protractor_Cucumber/issues"
+  },
+  "homepage": "https://github.com/Nektarios1982Code/Protractor_Cucumber#readme"
+}
