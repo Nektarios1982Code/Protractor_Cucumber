@@ -73,5 +73,20 @@ exports.config = {
     capabilities: {
         'browserName': 'chrome'
     },
+    specs: ['protractor-specs.js']
 };
+```
+
+PROTRACTOR SPECS FILE 
+---------------------
+Add on your project ROOT folder the file protractor-specs.js
+
+which will contain a basic test of protractor without cucumber yet
+
+```
+describe('angularjs homepage todo list', function () {
+    it('should add a todo', function () {
+        browser.get('https://angularjs.org');
+    });
+});
 ```
