@@ -145,3 +145,15 @@ Finished in 4.298 seconds
 [23:49:45] I/launcher - 0 instance(s) of WebDriver still running
 [23:49:45] I/launcher - chrome #01 passed
 ```
+
+PACKAGE.JSON NEW SCRIPTS
+------------------------
+You can automate some commands through package.json in the scripts section by adding the following lines
+
+```
+"test": "protractor protractor-conf.js",
+"protractor": "node_modules/protractor/built/cli.js",
+"webdriver-update": "./node_modules/.bin/webdriver-manager update"
+```
+
+In that way, we run **npm run test** and inside the test we define the source of the file containg our test
