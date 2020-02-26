@@ -68,8 +68,8 @@ The basic skeleton should look like this:
 exports.config = {
     //directConnect: true,
     seleniumAddress: 'http://localhost:4444/wd/hub',
-    framework: 'custom',
-    frameworkPath: require.resolve('protractor-cucumber-framework'),
+    framework: 'jasmine',
+    //frameworkPath: require.resolve('protractor-cucumber-framework'),
     capabilities: {
         'browserName': 'chrome'
     },
@@ -124,3 +124,24 @@ From a 2nd terminal or cmd window run the following command :
 3. npm run protractor
 
 This command will automatically run the script with property 'protractor', defined in the package.json
+
+This should be the output of your first Protractor Script
+
+```
+C:\Protractor_GIT>npm run protractor
+
+> protractor_git@1.0.0 protractor C:\Protractor_GIT
+> protractor.cmd protractor-conf.js
+
+[23:49:35] I/launcher - Running 1 instances of WebDriver
+[23:49:35] I/hosted - Using the selenium server at http://localhost:4444/wd/hub
+Started
+.
+
+
+1 spec, 0 failures
+Finished in 4.298 seconds
+
+[23:49:45] I/launcher - 0 instance(s) of WebDriver still running
+[23:49:45] I/launcher - chrome #01 passed
+```
