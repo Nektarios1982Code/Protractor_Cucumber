@@ -3,6 +3,11 @@
 Guide to Protractor, Javascript and Cucumber Setup
 ==================================================
 
+USED SOFTWARE
+-------------
+Windows 10
+VS Code
+
 NPM
 ----
 First initialize your package.json file by running the command below:
@@ -157,3 +162,36 @@ You can automate some commands through package.json in the scripts section by ad
 ```
 
 In that way, we run **npm run test** and inside the test we define the source of the file containg our test
+
+CONFIGURATION FOR CUCUMBER
+--------------------------------------
+**Important** If you are using VS Code (preferred) install the extension
+
+* * cucumber (gherkin) full support * *
+
+1. From your project root folder create a new folder called 'features'
+
+2. Inside the 'features' folder create a file called login.feature
+
+This will be your specs file for cucumber (gherkin)
+
+3. Inside the 'features' folder create a sub-folder called stepDefinitions
+
+There all the skeleton for the output of the compiled feature file will be generated
+
+4. Open your 'protractor-conf-js' file and add a new property called 
+
+specs: './features/*.feature'
+cucumberOpts: {
+        tags: false,
+        format: "json:cucumber_report.json",
+        // require step definitions
+        require: [
+            properties.get('stepsPath'), // accepts a glob
+        ]
+    }
+
+5. Uncomment the following line: frameworkPath: require.resolve('protractor-cucumber-framework')
+
+6. Replace framework: 'jasmine' with 'custom
+
