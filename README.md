@@ -102,7 +102,7 @@ passed is the specs file we have added before.
 ```
  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "protractor": ".\\node_modules\\.bin\\protractor.cmd protractor.conf.js"
+    "protractor": ".\\node_modules\\.bin\\protractor.cmd protractor-conf.js"
   },
 ```
 
