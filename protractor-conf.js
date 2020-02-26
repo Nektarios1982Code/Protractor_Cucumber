@@ -6,4 +6,5 @@ exports.config = {
     capabilities: {
         'browserName': 'chrome'
     },
+    specs: ['protractor-specs.js']
 };
