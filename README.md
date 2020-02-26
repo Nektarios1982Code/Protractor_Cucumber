@@ -175,23 +175,24 @@ CONFIGURATION FOR CUCUMBER
 
 This will be your specs file for cucumber (gherkin)
 
-3. Inside the 'features' folder create a sub-folder called stepDefinitions
+3. Inside the 'features' folder create a sub-folder called 'stepDefinitions'
+
+4. Inside the 'stepDefinitions' folder create a file called stepDefinitions.js file
 
 There all the skeleton for the output of the compiled feature file will be generated
 
-4. Open your 'protractor-conf-js' file and add a new property called 
+5. Open your 'protractor-conf-js' file and add a new property called 
 
 specs: './features/*.feature'
 cucumberOpts: {
         tags: false,
-        format: "json:cucumber_report.json",
         // require step definitions
         require: [
-            properties.get('stepsPath'), // accepts a glob
+            ./features/stepDefinitions/*.js', // accepts a glob
         ]
     }
 
-5. Uncomment the following line: frameworkPath: require.resolve('protractor-cucumber-framework')
+6. Uncomment the following line: frameworkPath: require.resolve('protractor-cucumber-framework')
 
-6. Replace framework: 'jasmine' with 'custom
+7. Replace framework: 'jasmine' with 'custom
 
