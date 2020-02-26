@@ -30,3 +30,43 @@ The **required** packages are : cucumber, protractor and protractor-cucumber-fra
 `$ npm i cucumber-html-reporter`
 
 `$ npm i properties-reader`
+
+
+PACKAGE.JSON WITH DEPENDENCIES
+------------------------------
+Your package.json file should now look like this:
+```
+{
+  "name": "protractor_cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^6.0.5",
+    "cucumber-html-reporter": "^5.1.0",
+    "properties-reader": "^1.0.0",
+    "protractor": "^5.4.3",
+    "protractor-cucumber-framework": "^6.2.0"
+  }
+}
+```
+
+FOLDER STRUCTURE
+-------------------------
+Now your folder structure should look like : 
+
+ROOT
+  > node_modules
+package.json
+package-lock.json
+
+CONFIGURATION FILE v1.0.0
+-------------------------
+Add on your project folder the
