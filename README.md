@@ -164,7 +164,7 @@ You can automate some commands through package.json in the scripts section by ad
 In that way, we run **npm run test** and inside the test we define the source of the file containg our test
 
 CONFIGURATION FOR CUCUMBER
---------------------------------------
+--------------------------
 **Important** If you are using VS Code (preferred) install the extension
 
 * * cucumber (gherkin) full support * *
@@ -196,3 +196,73 @@ cucumberOpts: {
 
 7. Replace framework: 'jasmine' with 'custom
 
+RUNNING YOUR FIRST FEATURE FILE
+-------------------------------
+
+```
+C:\Protractor_GIT>npm run test
+
+> protractor_git@1.0.0 test C:\Protractor_GIT
+> protractor protractor-conf.js
+
+[00:10:42] I/launcher - Running 1 instances of WebDriver
+[00:10:42] I/hosted - Using the selenium server at http://localhost:4444/wd/hub
+UUUUUU.
+
+Warnings:
+
+1) Scenario: In order to verify login to facebook # features\login.feature:7
+   ? Given I go to "http://www.way2automation.com/angularjs-protractor/banking/#/login"
+       Undefined. Implement with the following snippet:
+
+         Given('I go to {string}', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? When I found the title as "Protractor practice website - Banking App"
+       Undefined. Implement with the following snippet:
+
+         When('I found the title as {string}', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? Then I click on CustomerLogin Button
+       Undefined. Implement with the following snippet:
+
+         Then('I click on CustomerLogin Button', function () {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? Then I select the value as "Harry Potter" from the list
+       Undefined. Implement with the following snippet:
+
+         Then('I select the value as {string} from the list', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? Then I click on Login
+       Undefined. Implement with the following snippet:
+
+         Then('I click on Login', function () {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   ? Then Welcome Page should show login as "Harry Potter"
+       Undefined. Implement with the following snippet:
+
+         Then('Welcome Page should show login as {string}', function (string) {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
+
+   √ After # node_modules\protractor-cucumber-framework\lib\resultsCapturer.js:27
+
+1 scenario (1 undefined)
+6 steps (6 undefined)
+0m00.002s
+```
