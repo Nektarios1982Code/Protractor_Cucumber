@@ -4,7 +4,7 @@
   "description": "\"# Protractor_Cucumber\"",
   "main": "index.js",
   "scripts": {
-    "test": "protractor protractor-conf.js",
+    "test": "protractor protractor-conf.js --format=json:cucumber_html_report.json && node index.js",
     "protractor": "node_modules/protractor/built/cli.js",
     "webdriver-update": "./node_modules/.bin/webdriver-manager update"
   },
