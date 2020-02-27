@@ -168,7 +168,7 @@ CONFIGURATION FOR CUCUMBER
 --------------------------
 **Important** If you are using VS Code (preferred) install the extension
 
-* * cucumber (gherkin) full support * *
+cucumber (gherkin) full support 
 
 1. From your project root folder create a new folder called 'features'
 
