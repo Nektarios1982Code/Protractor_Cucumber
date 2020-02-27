@@ -1,0 +1,60 @@
+[
+  {
+    "description": "    In order to perform successful login\n    As a user\n    I want to verify correct title of page",
+    "keyword": "Feature",
+    "name": "Login to Website",
+    "line": 1,
+    "id": "login-to-website",
+    "tags": [],
+    "uri": "features\\login.feature",
+    "elements": [
+      {
+        "id": "login-to-website;in-order-to-verify-correct-title-of-page",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "In order to verify correct title of page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I go to \"http://juliemr.github.io/protractor-demo/\"",
+            "match": {
+              "location": "features\\stepDefinitions\\stepDefinition.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4033000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I found the title as \"Super Calculator\"",
+            "match": {
+              "location": "features\\stepDefinitions\\stepDefinition.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
