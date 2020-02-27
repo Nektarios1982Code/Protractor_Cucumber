@@ -63,8 +63,8 @@ Your package.json file should now look like this:
 }
 ```
 
-CONFIGURATION FILE v1.0.0
--------------------------
+CONFIGURATION FILE
+------------------
 Add on your project ROOT folder the file protractor-conf.js
 
 The basic skeleton should look like this:
@@ -265,3 +265,49 @@ The output should be successful as previously displaying:
 
 1 scenario (1 passed)
 2 steps (2 passed)
+
+
+ADD INDEX.JS FOR CUCUMBER-HTML-REPORTER
+---------------------------------------------
+In the root folder add a new file called 'index.js'
+
+This is where the configuration for HTML Reporting will be defined.
+
+```
+var reporter = require('cucumber-html-reporter');
+
+var options = {
+    theme: 'bootstrap',
+    jsonFile: './cucumber_report.json',
+    output: './cucumber_report.html',
+    reportSuiteAsScenarios: true,
+    scenarioTimestamp: true,
+    launchReport: true,
+    metadata: {
+        "App Version": "0.3.2",
+        "Test Environment": "STAGING",
+        "Browser": "Chrome  54.0.2840.98",
+        "Platform": "Windows 10",
+        "Parallel": "Scenarios",
+        "Executed": "Remote"
+    }
+};
+```
+
+** Important: ** Then go to your protractor-conf.js file and
+
+add the following line inside the cucumberOpts config param:
+
+format: "json:cucumber_report.json",
+
+PACKAGE.JSON WITH HTML REPORTER
+-------------------------------
+Now go to your package.json file and insert after the protractor-conf.js the following:
+
+```
+ "test": "protractor protractor-conf.js --format=json:cucumber_html_report.json && node index.js",
+```
+
+Run your test with 'npm run test'.
+
+You should have an HTML Report generated at a browser indicating the tests runned.
