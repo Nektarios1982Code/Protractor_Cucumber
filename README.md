@@ -5,9 +5,9 @@ Guide to Protractor, Javascript and Cucumber Setup
 
 USED SOFTWARE
 -------------
-* * Windows 10 * *
+Windows 10
 
-* * VS Code * *
+VS Code
 
 NPM
 ----
