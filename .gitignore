@@ -1,2 +1,4 @@
 node_modules/
 package-lock.json
+cucumber_html_report.json
+cucumber_report.html
