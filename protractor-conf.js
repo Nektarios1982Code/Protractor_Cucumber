@@ -9,6 +9,7 @@ exports.config = {
     specs: ['./features/*.feature'],
     cucumberOpts: {
         tags: false,
+        format: "json:cucumber_report.json",
         // require step definitions
         require: [
             './features/stepDefinitions/*.js', // accepts a glob
