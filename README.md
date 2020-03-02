@@ -1,5 +1,9 @@
 "# Protractor_Cucumber" 
 
+Follow my QA Blog
+==================================================
+https://softwareintest.wordpress.com/
+
 Guide to Protractor, Javascript and Cucumber Setup
 ==================================================
 
